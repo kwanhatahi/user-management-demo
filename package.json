@@ -1,0 +1,22 @@
+{
+  "name": "user-management-demo",
+  "version": "1.0.0",
+  "description": "A demo user management system",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "build:core": "yarn workspace @project/core ts:build",
+    "start:all": "concurrently 'yarn start:web' 'yarn start:core' 'yarn start:backend'",
+    "start:web": "yarn workspace @project/web start",
+    "start:core": "yarn workspace @project/core ts:watch",
+    "start:backend": "yarn workspace @project/backend start:dev",
+    "core": "yarn workspace @project/core"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  }
+}

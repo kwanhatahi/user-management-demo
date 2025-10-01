@@ -1,0 +1,47 @@
+:host ::ng-deep div.dataTables_wrapper div.dataTables_length select {
+    width: 80px !important;
+}
+
+:host ::ng-deep .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 2px 4px !important;
+}
+
+
+:host ::ng-deep .page-item.active .page-link {
+    background-color: #3fb598;
+    border-color: #3fb598;
+}
+
+:host ::ng-deep .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+:host ::ng-deep div.dataTables_wrapper div.dataTables_filter input,
+.mat-form-field {
+    width: 240px;
+}
+
+
+:host ::ng-deep table.dataTable th {
+    font-size: 14px;
+}
+
+:host ::ng-deep table.dataTable td {
+    font-size: 14px;
+}
+
+:host ::ng-deep li.page-item .page-link {
+    font-size: 14px !important;
+}
+
+:host ::ng-deep div.dataTables_wrapper div.dataTables_filter {
+    padding-bottom: 28px;
+}
+
+
+:host ::ng-deep .dataTables_wrapper .dataTables_scroll {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    --bs-border-width: 1px;
+}
